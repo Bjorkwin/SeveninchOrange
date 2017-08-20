@@ -16,7 +16,7 @@ html, body {
 /* HEADER STYLES */
 .header {
   width: 100%;
-  height: 160px;
+  height: 100px;
 
   padding: 30px 10px;
 
@@ -30,14 +30,13 @@ html, body {
 }
 
 .header_link {
-  padding: 30px 10px;
+  font-size: 20px;
+  padding: 5px 10px;
 
   background: transparent;
   color: white;
 
   border: none;
-
-  font-size: 30px;
 
   text-decoration: none;
   display: block;
@@ -67,18 +66,22 @@ html, body {
   float: left;
 }
 
+.header_link.active {
+  border-bottom: 2px solid #F47610;
+}
+
 .header_image {
   display: inline;
 }
 
 .header_image > img {
-  width: 100px;
-  height: 100px;
-
   position: absolute;
+  
+  width: 60px;
+  height: 60px;
 
-  top: 30px;
-  left: 85px;
+  left: 30px;
+  top: 20px;
 }
 
 
@@ -88,8 +91,6 @@ html, body {
   height: 100%;
 
   margin-top: 180px;
-
-  overflow: auto;
 
   display: none;
 }
@@ -126,22 +127,6 @@ html, body {
   height: 100%;
   left: 0;
   top: 0;
-}
-
-/* ABOUT STYLES */
-.aboutpage {
-  padding: 30px;
-  width: 100%;
-  background-color: white;
-  min-width: 700px;
-  position: relative;
-}
-
-.aboutpage > .paragraph {
-  position: relative;
-  width: 44%;
-  margin-left: 56%;
-  margin-top: 80px;
 }
 
 /* CONTACT STYLES */
@@ -195,6 +180,22 @@ html, body {
   font-size: 18px;
 }
 
+/* ABOUT STYLES */
+.aboutpage {
+  padding: 30px;
+  width: 100%;
+  background-color: white;
+  min-width: 700px;
+  position: relative;
+}
+
+.aboutpage > .paragraph {
+  position: relative;
+  width: 44%;
+  margin-left: 56%;
+  margin-top: 80px;
+}
+
 .img_stack {
   position: absolute;
   margin: -30px;
@@ -204,6 +205,18 @@ html, body {
 
 .stack_image {
   height: 400px;
+  position: relative;
+}
+
+.construction {
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  font-family: Sanchez;
+  position: relative;
+  margin-top: 150px;
+  padding: 30px;
+  color: #F47610;
 }
 
 @media screen and (max-width: 800px) {
@@ -220,23 +233,6 @@ html, body {
 }
 
 @media screen and (max-width: 1000px) {
-  .header_link {
-    font-size: 20px;
-    padding: 5px 10px;
-  }
-
-  .header_image > img {
-    width: 60px;
-    height: 60px;
-
-    left: 30px;
-    top: 20px;
-  }
-
-  .header {
-    height: 100px;
-  }
-
   .content {
     margin-top: 100px;
   }

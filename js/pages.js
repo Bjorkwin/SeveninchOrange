@@ -14,6 +14,8 @@ var routeToPage = {
 
 function setPage(name) {
   $('#page_' + lastPageName).css('display', 'none');
+  $('#nav_' + lastPageName).removeClass('active');
+  $('#nav_' + name).addClass('active');
   $('#page_' + name).css('display', 'block');
   lastPageName = name;
 
@@ -35,6 +37,7 @@ function loadPage() {
   console.log(lastPageName);
 
   $('#page_' + lastPageName).css('display', 'block');
+  $('#nav_' + lastPageName).addClass('active');
 
   correctStyles(lastPageName);
 }
