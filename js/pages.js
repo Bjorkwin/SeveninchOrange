@@ -41,4 +41,8 @@ function loadPage() {
 
 window.onload = function () {
   loadPage();
+
+  setTimeout(function () {
+    $('#postload_styles').attr('disabled', false);
+  }, 250);
 }

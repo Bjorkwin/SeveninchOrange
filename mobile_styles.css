@@ -1,3 +1,188 @@
+/* GENERAL STYLING */
+
 html, body {
   background-color: white;
+
+  margin: 0;
+  padding: 0;
+
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* HEADER STYLES */
+.header {
+  width: 100%;
+  height: 120px;
+
+  padding: 30px 10px;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: 3;
+}
+
+.header > h1 {
+  font-size: 25px;
+
+  color: #F47610;
+
+  display: inline;
+}
+
+.header_link {
+  padding: 5px 10px;
+
+  background: transparent;
+  color: white;
+
+  border: none;
+
+  font-size: 20px;
+
+  text-decoration: none;
+  display: block;
+
+  cursor: pointer;
+
+  transition: color 200ms linear;
+
+  font-family: Sanchez;
+
+  outline: none;
+}
+
+.header_link:hover {
+  color: #F47610;
+}
+
+.header_nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  float: right;
+}
+
+.header_nav > li {
+  float: left;
+}
+
+.header_image {
+  display: inline;
+}
+
+.header_image > img {
+  width: 80px;
+  height: 80px;
+
+  position: absolute;
+
+  top: 30px;
+  left: 95px;
+}
+
+@media screen and (max-width: 850px) {
+  .header_image > img {
+    width: 100px;
+    height: 100px;
+
+    left: 30px;
+  }
+}
+
+
+/* CONTENT STYLES */
+.content {
+  width: 100%;
+  height: 100%;
+
+  margin-top: 120px;
+
+  overflow: auto;
+
+  display: none;
+}
+
+.content h1 {
+  font-family: Sanchez;
+
+  color: #F47610;
+
+  position: relative;
+  margin-top: 100px;
+}
+
+/* FRONTPAGE STYLES */
+.frontpage {
+  padding: 30px;
+
+  text-align: center;
+}
+
+.frontpage > h1 {
+  font-size: 80px;
+
+  color: #F47610;
+
+  margin-top: 100px;
+}
+
+@media screen and (max-width: 850px) {
+  .frontpage > h1 {
+    font-size: 60px;
+  }
+}
+
+.frontpage > .bg {
+  position: fixed;
+  width: 200%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+/* ABOUT STYLES */
+.aboutpage {
+  padding: 30px;
+}
+
+.aboutpage > h1 {
+  font-size: 50px;
+  
+  color: #ffffff;
+  margin-top: 0;
+}
+
+.aboutpage > .bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+/* CONTACT STYLES */
+.contactpage {
+  padding: 30px;
+}
+
+.contactpage > h1 {
+  font-size: 50px;
+  
+  color: #ffffff;
+  margin-top: 0;
+}
+
+.contactpage > .bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
 }

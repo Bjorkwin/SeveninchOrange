@@ -1,0 +1,3 @@
+.header_image > img {
+  transition: all 250ms ease-out;
+}
