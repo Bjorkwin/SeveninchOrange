@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+  
+  <head>
+    <title>Seven inch Orange</title>
+    <style>
+      @font-face {
+        font-family: Sanchez;
+        src: url(assets/fonts/Sanchez-Regular.ttf);
+      }
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="desktop_styles.css" id="desktop_styles" />
+    <link rel="stylesheet" type="text/css" href="mobile_styles.css" id="mobile_styles" disabled />
+
+    <script type="text/javascript" src="jquery.js"></script>
+  </head>
+
+  <body>
+
+    <script type="text/javascript" src="js/useragent.js"></script>
+
+    <div class="header">
+      <span class="header_image"><img src="assets/logo.png" /></span>
+
+      <ul class="header_nav">
+        <li><button class="header_link" onClick="setPage(0)">Home</button></li>
+        <li><button class="header_link" onClick="setPage(1)">About us</button></li>
+        <li><button class="header_link" onClick="setPage(2)">Contact</button></li>
+      </ul>
+    </div>
+
+    <div class="content" id="page_0">
+      <div class="frontpage">
+        <img class="bg" src="assets/bg.jpg" />
+        <h1>Seven inch Orange</h1>
+      </div>
+    </div>
+  </body>
+
+</html>
