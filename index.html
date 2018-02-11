@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <html>
-  
+
   <head>
     <title>Seven inch Orange</title>
     <style>
@@ -24,55 +24,86 @@
     <script type="text/javascript" src="js/useragent.js"></script>
     <script type="text/javascript" src="js/pages.js"></script>
 
-    <div class="header">
-      <span class="header_image"><img src="assets/logo.svg" /></span>
+    <div id="main">
+      <div class="header">
+        <span class="header_image"><img src="assets/logo.svg" /></span>
 
-      <ul class="header_nav">
-        <li><button class="header_link" id="nav_home" onClick="setPage('home')">Home</button></li>
-        <li><button class="header_link" id="nav_about" onClick="setPage('about')">About us</button></li>
-        <li><button class="header_link" id="nav_contact" onClick="setPage('contact')">Contact</button></li>
-      </ul>
-    </div>
-  
-    <div class="content" id="page_home">
-      <div class="frontpage">
-        <img class="bg" src="assets/bg.jpg" />
-        <h1>Seven inch Orange</h1>
+        <ul class="header_nav">
+          <li><button class="header_link" id="nav_home" onClick="setPage('home')">Home</button></li>
+          <li><button class="header_link" id="nav_about" onClick="setPage('about')">About us</button></li>
+          <li><button class="header_link" id="nav_contact" onClick="setPage('contact')">Contact</button></li>
+        </ul>
       </div>
-    </div>
 
-    <div class="content construction" id="page_about">
-      This page is still under construction!
-    </div>
-        
-    <div class="content" id="page_about_disabled" style="display: none">
-      <div class="aboutpage">
-        <div class="img_stack">
-          <img class="stack_image left" src="assets/content/about_us1.jpg" />
-          <img class="stack_image right" src="assets/content/about_us2.jpg" />
+      <!-- <div class="parallax"></div> -->
+
+      <div class="content" id="page_home">
+        <div class="frontpage">
+          <img class="bg" src="assets/bg.jpg" />
+          <h1>Seven inch Orange</h1>
         </div>
-        <p class="paragraph right">I 2015 indgik basunisten Tobias Stavngaard og alt-saxofonisten Eskil Fundal et musikalsk samarbejde. Den Maceo Parker-inspirerede saxofonlyd blev, sammen med den mere jazzede basuntone, grundlaget for Seven inch Orange. År senere er bandets karakteristiske blæsergruppe udvidet, en erfaren rytmegruppe etableret og i front: Malene Leonora Nielsen, som kroner værket med sin sprøde stemme.
-          </p>
-        <p class="paragraph right">I 2015 indgik basunisten Tobias Stavngaard og alt-saxofonisten Eskil Fundal et musikalsk samarbejde. Den Maceo Parker-inspirerede saxofonlyd blev, sammen med den mere jazzede basuntone, grundlaget for Seven inch Orange. År senere er bandets karakteristiske blæsergruppe udvidet, en erfaren rytmegruppe etableret og i front: Malene Leonora Nielsen, som kroner værket med sin sprøde stemme.
-          </p>
       </div>
-    </div>
-    
-    <div class="content" id="page_contact">
-      <div class="contactpage">
-        <h2>Get in touch with</h2>
-        <h1>Seven inch Orange</h1>
-        <div class="contact_box">
-          <div class="contact_left">Booking</div>
-          <div class="contact_right">
-            <p>Manager: Tobias Stavngaard</p>
-            <p>booking@seveninchorange.dk</p>
-            <p>+45 51 91 74 17</p>
+
+      <div class="content construction" id="page_construction">
+        This page is still under construction!
+      </div>
+
+      <div class="content" id="page_about">
+        <div class="about">
+          <div class="white">
+            <h1>The Band</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="window">
+            <img class="parallax-image" src="assets/content/about_us1.jpg" />
+          </div>
+          <div class="black">
+            <h1>The Members</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+
+          <div class="window">
+            <img class="parallax-image" src="assets/content/about_us2.jpg" />
+          </div>
+          <div class="white">
+            <h1>Music</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+
+          <div class="window">
+            <img class="parallax-image" src="assets/content/about_us3.jpg" />
+          </div>
+          <div class="white">
+            <h1>Booking</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
         </div>
-        <div class="contact_box">
-          <span class="contact_left">Find us on</span>
-            <span class="contact_facebook">Facebook @SevenInchOrange</span>
+      </div>
+
+      <div class="content" id="page_contact">
+        <div class="contactpage">
+          <h2>Get in touch with</h2>
+          <h1>Seven inch Orange</h1>
+          <div class="contact_box">
+            <div class="contact_left">Booking</div>
+            <div class="contact_right">
+              <p>Manager: Tobias Stavngaard</p>
+              <p>booking@seveninchorange.dk</p>
+              <p>+45 51 91 74 17</p>
+            </div>
+          </div>
+          <div class="contact_box">
+            <span class="contact_left">Find us on</span>
+              <span class="contact_facebook">Facebook @SevenInchOrange</span>
+          </div>
         </div>
       </div>
     </div>

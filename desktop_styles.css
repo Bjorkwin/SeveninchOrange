@@ -13,6 +13,13 @@ html, body {
   box-sizing: border-box;
 }
 
+#main {
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
 /* HEADER STYLES */
 .header {
   width: 100%;
@@ -76,7 +83,7 @@ html, body {
 
 .header_image > img {
   position: absolute;
-  
+
   width: 60px;
   height: 60px;
 
@@ -99,9 +106,6 @@ html, body {
   font-family: Sanchez;
 
   color: #F47610;
-
-  position: relative;
-  margin-top: 100px;
 }
 
 /* FRONTPAGE STYLES */
@@ -119,6 +123,8 @@ html, body {
   color: #F47610;
 
   margin-top: 100px;
+
+  position: relative;
 }
 
 .frontpage > .bg {
@@ -139,7 +145,7 @@ html, body {
 
 .contactpage > h1 {
   font-size: 50px;
-  
+
   color: #F47610;
   margin-top: 0;
 }
@@ -187,31 +193,44 @@ html, body {
 }
 
 /* ABOUT STYLES */
-.aboutpage {
-  padding: 30px;
+.about {
+  width: 800px;
+  margin: 0 auto 200px;
+}
+
+.about > .black {
+  background-color: black;
   width: 100%;
+  padding: 10px;
+  color: white;
+}
+
+.about > .white {
   background-color: white;
-  min-width: 700px;
-  position: relative;
-}
-
-.aboutpage > .paragraph {
-  position: relative;
-  width: 44%;
-  margin-left: 56%;
-  margin-top: 80px;
-}
-
-.img_stack {
-  position: absolute;
-  margin: -30px;
   width: 100%;
+  padding: 10px;
+  color: black;
+}
+
+.about h1 {
+  font-size: 45px;
+  margin: 30px 0;
+  text-align: center;
+}
+
+.about p {
+  font-size: 20px;
+}
+
+.about > .window {
+  height: 200px;
   overflow: hidden;
 }
 
-.stack_image {
-  height: 400px;
-  position: relative;
+.about > .window > .parallax-image {
+  height: 100vh;
+  transform: translateZ(-1px) scale(2);
+  z-index: -1;
 }
 
 .construction {
@@ -225,24 +244,7 @@ html, body {
   color: #F47610;
 }
 
-@media screen and (max-width: 800px) {
-  .stack_image {
-    height: 300px;
-  }
-  
-  .aboutpage > .paragraph {
-    width: 45%;
-    margin-left: 55%;
-    margin-top: 60px;
-    font-size: 16px;
-  }
-}
-
 @media screen and (max-width: 1000px) {
-  .content {
-    margin-top: 100px;
-  }
-
   .frontpage > h1 {
     font-size: 60px;
   }
