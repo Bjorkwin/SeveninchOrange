@@ -173,6 +173,12 @@ html, body {
   margin-left: 30px;
 }
 
+.contact_facebook {
+  display: inline-table;
+  color: #3B5998;
+  margin-left: 30px;
+}
+
 .paragraph {
   position: relative;
 
