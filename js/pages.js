@@ -34,6 +34,8 @@ function correctStyles(name) {
 function loadPage() {
   lastPageName = routeToPage[window.location.hash || '#'];
 
+  console.log(lastPageName);
+
   $('#page_' + lastPageName).css('display', 'block');
   $('#nav_' + lastPageName).addClass('active');
 
